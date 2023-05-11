@@ -589,7 +589,7 @@ function redirect_canonical( $requested_url = null, $do_redirect = true ) {
 	}
 
 	// Trailing /index.php.
-	$redirect['path'] = preg_replace( '|/' . preg_quote( $wp_rewrite->index, '|' ) . '/*?$|', '/', $redirect['path'] );
+	// $redirect['path'] = preg_replace( '|/' . preg_quote( $wp_rewrite->index, '|' ) . '/*?$|', '/', $redirect['path'] );
 
 	$punctuation_pattern = implode(
 		'|',
